@@ -54,6 +54,15 @@ insert into venda(id,totalVenda,dataVenda,fkCliente)values
 (6,'800','2004-11-11',2),
 (7,'900','2005-12-12',3),
 (8,'100','2007-07-14',4);
+
+insert into produto(id,nome,descricao,preco)values
+(1, 'coca-cola','Bebida', 12.5),
+(2, 'picanha','Carne', 65.5),
+(3, 'maça','fruta', 4),
+(4, 'guarana','Bebida', 10.25);
+
+insert into venda_produto(fkVenda,fkProduto,quantidade,desconto)values
+(1,4,30,25.6);
 e) Exibir todos os dados de cada tabela criada, separadamente.
 f) Fazer os acertos da chave estrangeira, caso não tenha feito no momento da criação 
 das tabelas.
